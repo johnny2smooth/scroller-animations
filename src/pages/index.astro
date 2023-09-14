@@ -23,8 +23,8 @@ while (i < 100) {
   </body>
   <style>
     :root {
-      --green: oklab(70% -0.5 0.09);
-      --blue: oklab(70% -0.11 -0.18);
+      --blue: oklab(70% -0.09 -0.23);
+      --purple: oklab(70% 0.09 -0.18);
       --orange: oklab(80% 0.15 0.12);
       --pink: oklab(80% 0.22 0.02);
     }
@@ -34,22 +34,30 @@ while (i < 100) {
         background-image: linear-gradient(
           to right in oklab,
           var(--pink) 1%,
-          var(--pink) 50%
+          var(--pink) 100%
         );
       }
-      33% {
+      25% {
         background-image: linear-gradient(
           to right in oklab,
-          var(--pink) 10%,
+          var(--pink) 50%,
           var(--orange) 100%
         );
       }
-      66% {
+      50% {
         background-image: linear-gradient(
           to right in oklab,
-          var(--pink) 1%,
-          var(--orange) 80%,
-          var(--blue) 100%
+          var(--pink) 30%,
+          var(--orange) 75%,
+          var(--purple) 100%
+        );
+      }
+      75% {
+        background-image: linear-gradient(
+          to right in oklab,
+          var(--pink) 20%,
+          var(--orange) 50%,
+          var(--purple) 90%
         );
       }
 
@@ -57,10 +65,10 @@ while (i < 100) {
         transform: scaleX(1);
         background-image: linear-gradient(
           to right in oklab,
-          var(--pink) 1%,
-          var(--orange) 70%,
-          var(--blue) 90%,
-          var(--green) 100%
+          var(--pink) 10%,
+          var(--orange) 40%,
+          var(--purple) 80%,
+          var(--blue) 100%
         );
       }
     }
